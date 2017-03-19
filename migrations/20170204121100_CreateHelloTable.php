@@ -1,7 +1,7 @@
 <?php
 
+use Core\Services\Contracts\Database;
 use Core\Services\Contracts\Migration as MigrationContract;
-use Core\Services\PDOs\Schemas\Contracts\Schema;
 
 /**
  * Migration Class
@@ -11,9 +11,9 @@ class CreateHelloTable implements MigrationContract
     /**
      * @inheritdoc
      */
-    public function up(Schema $schema)
+    public function up(Database $db)
     {
-        $schema->createTable('hello', [
+        $db->schema()->createTable('hello', [
             'id'   => ['type' => 'identity'],
             'name' => ['type' => 'string'],
         ]);
@@ -22,8 +22,8 @@ class CreateHelloTable implements MigrationContract
     /**
      * @inheritdoc
      */
-    public function down(Schema $schema)
+    public function down(Database $db)
     {
-        $schema->dropTable('hello');
+        $db->schema()->dropTable('hello');
     }
 }
