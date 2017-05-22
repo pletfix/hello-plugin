@@ -1,4 +1,4 @@
-# A Pletfix Plugin Example.
+# A Pletfix Plugin Example
 
 ## About This
 
@@ -13,7 +13,7 @@ If you want to write your own plugin, you should create a workbench as follows.
 
 1. Install a fresh [Pletfix Application](https://github.com/pletfix/app)
 
-2. Create a folder `workbench` under the project folder, download this plugin example and stored it under the name as 
+2. Create a folder `workbench` under the project folder, download this plugin example and store it under the name as 
    you wish. After then the `workbench` folder looks like this:
    
     ~~~    
@@ -51,4 +51,4 @@ If you want to write your own plugin, you should create a workbench as follows.
 
 Read more about writing Pletfix plugins in the [official documentation](https://pletfix.com/docs/master/en/plugins#writing).   
 
-> Don't forget to add a entry on the [Pletfix plugin page](https://pletfix.com/plugins) when you finish your plugin.
+> Don't forget to add an entry on the [Pletfix plugin page](https://pletfix.com/plugins) when you have finished your plugin.
