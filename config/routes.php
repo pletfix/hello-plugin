@@ -2,7 +2,8 @@
 
 $route = \Core\Application::route();
 
-$route->get('hello', function() {
+$route->get('hello-service', function() {
     return di('hello')->sayHello();
-//  return view('test2', $data = collect(['name' => 'Anton']));
 });
+
+$route->get('hello', 'HelloController@index', 'Hello');

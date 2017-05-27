@@ -29,6 +29,7 @@ If you want to write your own plugin, you should create a workbench as follows.
                  |-tests/
                  |-.gitignore
                  |-composer.json
+                 |-phpunit.xml.dist
                  |-README.md
 
     ~~~    

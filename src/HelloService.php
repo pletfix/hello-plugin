@@ -6,8 +6,6 @@ class HelloService
 {
     public function sayHello()
     {
-        $s=  'Hello World!!!!';
-
-        return $s;
+        return 'Hello World!';
     }
 }
