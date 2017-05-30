@@ -1,6 +1,6 @@
 <?php
 
-namespace Pletfix\Hello;
+namespace Pletfix\Hello\Controllers;
 
 class HelloController
 {
