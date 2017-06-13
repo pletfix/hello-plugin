@@ -216,7 +216,7 @@ class Custom implements AuthContract
     /**
      * @inheritdoc
      */
-    public function isVerified() // or check? or isValid? or ...?
+    public function isLoggedIn()
     {
         return $this->attribute('id') !== null;
     }
@@ -276,7 +276,7 @@ class Custom implements AuthContract
      */
     public function changeName($name)
     {
-        if ($this->isVerified() && $this->name() !== $name) {
+        if ($this->isLoggedIn() && $this->name() !== $name) {
             $this->setPrincipal($this->id(), $name, $this->role());
         }
     }
@@ -288,7 +288,7 @@ class Custom implements AuthContract
      */
     public function changeRole($role)
     {
-        if ($this->isVerified() && $this->role() !== $role) {
+        if ($this->isLoggedIn() && $this->role() !== $role) {
             $this->setPrincipal($this->id(), $this->name(), $role);
             session()
                 ->delete('_csrf_token')

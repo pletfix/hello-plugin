@@ -9,7 +9,7 @@ Read more about Pletfix in the [official documentation](https://pletfix.com).
 
 ## Plugin Development
 
-If you want to write your own plugin, you should create a workbench as follows.
+If you want to write your own plugin, you should create a workbench as follows:
 
 1. Install a fresh [Pletfix Application](https://github.com/pletfix/app)
 
@@ -48,7 +48,14 @@ If you want to write your own plugin, you should create a workbench as follows.
     By convention, the namespace should consist of vendor and plugin name. The vendor name should be your username 
     or organization name of your github account.
     
-    Now you are ready to add services, assets, commands or what ever you like. 
+4. After you have modified the application's `composer.json`, you have to enter the following command into a terminal 
+   under the directory of your apllicaction:
+    
+    ~~~ 
+    composer dump
+    ~~~ 
+    
+Now you are ready to add services, assets, commands or what ever you like. 
 
 Read more about writing Pletfix plugins in the [official documentation](https://pletfix.com/docs/master/en/plugins#writing).   
 
