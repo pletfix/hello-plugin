@@ -2,9 +2,9 @@
 
 namespace Pletfix\Hello\Commands;
 
-use Core\Services\AbstractCommand;
+use Core\Services\Command;
 
-class HelloCommand extends AbstractCommand
+class HelloCommand extends Command
 {
     /**
      * The console command name.
