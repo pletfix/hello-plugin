@@ -11,14 +11,14 @@ class HelloCommand extends Command
      *
      * @var string
      */
-    protected $name = 'bla:blub';
+    protected $name = 'hello:greeting';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Migrate the database.';
+    protected $description = 'Say Hello!';
 
     /**
      * Possible arguments of the command.
@@ -26,18 +26,7 @@ class HelloCommand extends Command
      * @var array
      */
     protected $arguments = [
-//        'file'  => ['type' => 'string', 'description' => 'Migration File'],
-        'dummy' => ['type' => 'string', 'default' => 'hello', 'description' => 'Dummy'],
-    ];
-
-    /**
-     * Possible options of the command.
-     *
-     * @var array
-     */
-    protected $options = [
-        'rollback' => ['type' => 'bool',   'short' => 'r', 'description' => 'Rollback'],
-        'batch'    => ['type' => 'string', 'short' => 'b', 'default' => null, 'description' => 'Batch Number'],
+        'name' => ['type' => 'string', 'default' => 'nobody', 'description' => 'Your name'],
     ];
 
     /**
@@ -45,28 +34,6 @@ class HelloCommand extends Command
      */
     public function handle()
     {
-        $a = $this->secret('Geheim');
-//        fopen('fsdf', 'r');
-
-//          $b = 0;
-//          $a = 4 / $b; // Exception
-        $this->abort($a);
-
-
-        $a = $this->confirm('Geheim');
-//        $a = $this->choice('ohne', ['alpha', 'beta', 'gamma']);
-        $this->line('Your answer ' . $a);
-
-        $this->clear();
-
-        $a = $this->ask('mit', 'hello');
-        $this->line('Your answer ' . $a);
-
-//        $this->line('line');
-//        $this->info('info');
-//        $this->notice('notice');
-//        $this->question('question');
-//        $this->warn('warn');
-//        $this->error('error');
+        $this->line('Hello' . $this->input('name'));
     }
 }

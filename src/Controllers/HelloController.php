@@ -6,6 +6,6 @@ class HelloController
 {
     public function index()
     {
-        return view('admin.hello');
+        return view('hello.welcome');
     }
 }

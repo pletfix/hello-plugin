@@ -3,7 +3,7 @@
 use Core\Services\Contracts\Database;
 use Core\Services\Contracts\Migration as MigrationContract;
 
-class CreateTestTable implements MigrationContract
+class CreateHelloTable implements MigrationContract
 {
     /**
      * @inheritdoc
