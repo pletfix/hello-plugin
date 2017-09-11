@@ -1,6 +1,7 @@
 {
     "name": "pletfix/hello",
     "description": "A Pletfix Plugin Example.",
+    "keywords": ["pletfix", "plugin", "example"],
     "authors": [
         {
             "name": "Frank Rohlfing",

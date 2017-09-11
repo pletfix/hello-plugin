@@ -36,6 +36,9 @@ If you want to write your own plugin, you should create a workbench as follows:
 
     The folder `my-vendor` should be named like your username or organisation name of your GitHub account, but
     in lower case with "-" as separator. The name of the plugin should also be written in lower case with "-" as separator.
+    
+    If you preferred it, you could use "pletfix-" as prefix and "-plugin" as suffix for the plugin name. This parts are 
+    ignored while the registration procedure. 
 
 3. For auto loading the plugin, add a `psr-4` directive into the application's `composer.json`:
         
