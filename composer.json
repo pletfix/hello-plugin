@@ -1,5 +1,5 @@
 {
-    "name": "pletfix/hello",
+    "name": "pletfix/hello-plugin",
     "description": "A Pletfix Plugin Example.",
     "keywords": ["pletfix", "plugin", "example"],
     "authors": [
