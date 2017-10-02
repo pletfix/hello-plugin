@@ -1,6 +1,6 @@
 <?php
 
-$router = Core\Services\DI::getInstance()->get('router');
+$router = Core\Application::router();
 
 $router->get('hello-service', function() {
     return di('hello')->sayHello();
